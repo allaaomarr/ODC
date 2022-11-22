@@ -250,7 +250,9 @@ Spacer(),
             //redrawing scree
             await db.updateItem(updateItem); //updating note
 
-
+setState(() {
+  getData();
+});
 
             Navigator.pop(context);
           },
